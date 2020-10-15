@@ -1,0 +1,269 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+		display: block;}
+body {
+		background-color: #fff;
+		color: #000000;
+		background-image: url("images/MentalModel.png"); /* Background image will be updated to reflect "Risk Management" instead of "Safety". Waiting on Tyler Hatland. */
+		background-position: -250px -250px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		font-family: "Century Gothic", sans-serif;
+		line-height: 1.4em;
+		margin: 0px;}
+
+.wrapper {
+		width: 50%;
+		background-color: hsla(0, 0%, 100%, 0.9);
+		border: none;
+		margin: auto;
+		}
+
+header {
+		padding-top: 50px;
+		
+		}
+
+hr {
+		margin: 15px;
+	}
+
+img.logo {
+		width: 50%;
+		height: 50%;
+		}
+
+img.curve {
+	width: 100%;
+	height: 100%;
+}
+
+h2.CA {
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-weight: regular;
+	color: #ff0000;
+	font-size: 2em;
+	line-height: 1em;
+	}
+
+hr.CA {
+		border-top: 3px solid #ff0000;
+	}
+
+h2.RC {
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-weight: regular;
+		color: #6a00dc;
+		font-size: 2em;
+		line-height: 1em;
+		}
+
+hr.RC {
+		border-top: 3px solid #6a00dc;
+	}
+
+h2.SS {
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-weight: regular;
+		color: #2eb800;
+		font-size: 2em;
+		line-height: 1em;
+		}	
+
+hr.SS {
+		border-top: 3px solid #2eb800;
+	}
+
+h2.HB {
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-weight: regular;
+		color: #000000;
+		font-size: 2em;
+		line-height: 1em;
+		}	
+
+hr.HB {
+		border-top: 3px solid #000000;
+	}
+
+h2.PE {
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-weight: regular;
+		color: #995f39;
+		font-size: 2em;
+		line-height: 1em;
+		}	
+
+hr.PE {
+		border-top: 3px solid #995f39;
+	}
+
+h2.SC {
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-weight: regular;
+		color: #0000ff;
+		font-size: 2em;
+		line-height: 1em;
+		}	
+
+hr.SC {
+		border-top: 3px solid #0000ff;
+	}
+
+article {
+		overflow-x: hidden;
+		overflow-y: auto;
+		width: 80%;
+		padding: 20px;
+	}
+
+img.Hexagon {
+		float: right;
+		width: 40%;
+		height: 40%;
+		}
+
+a {
+		color: #de6581;
+		text-decoration: none;
+	}
+
+h1, h2, h3 {
+		font-weight: normal;
+	}
+
+h2 {
+		margin: 10px 0px 5px 0px;
+		}
+
+h3 {
+		margin: 0px 0px 10px 0px;
+		color: #ff0000;
+	}
+
+footer {
+		color: #000000;
+		text-align: center;
+		font-size: 80%;
+		padding: 10px 0px 20px 0px;
+	}
+
+h1, h2, h3, p {
+		padding-left: 15px;
+		display: block;
+		line-height: 1.5em;
+		}
+
+div.sticky {
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 0;
+		background: #fff;
+		height: 200px;
+		width: 700px;
+		padding: 0;
+		margin: auto;
+		text-align: center;
+		z-index: 100;
+	  }
+
+.hexagon {
+		background: #CD5C5C; /* Each section's background will need to be replaced by an image (possibly in a new div). Waiting on Tyler Hatland. */
+		position: relative;
+		width: 500px;
+		height: 288.68px;
+		margin: 144px auto 244px auto;
+		transform: rotate(90deg);
+		z-index: 50;
+	  }
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+}
+
+.hexagon::before {
+		bottom: 100%;
+		border-bottom: 144.34px solid #CD5C5C;
+	  }
+
+.hexagon::after {
+		top: 100%;
+		border-top: 144.34px solid #CD5C5C;
+	  }
+
+.grid-container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		transform: rotate(270deg);
+		padding: 0px;
+		z-index: 51;
+	  }
+
+.grid-item {
+		padding: 0px;
+		width: 166.67px;
+		height: 166.67px;
+		font-size: 16px;
+	  }
+
+.grid-item p {
+		  padding: 0px;
+		  margin-top: auto auto;
+	  }
+
+.Q6 {
+		  text-align: center;
+		  margin-top: 0px;
+		  transform: rotate(300deg);
+	  }
+
+.Q1 {
+			text-align: center;
+			margin-top: -100px;
+	}
+
+.Q2 {
+		text-align: center;
+		margin-top: 0px;
+		transform: rotate(60deg);
+	}
+
+.Q3 {
+		text-align: center;
+		margin-top: 60px;
+		transform: rotate(300deg);
+	}
+
+.Q5 {
+		text-align: center;
+		margin-top: 60px;
+		transform: rotate(60deg);
+  }
+
+.Q4 {
+	text-align: center;
+	margin-top: 150px;
+
+  }
+
+.Avg {
+	  position: absolute;
+	  height: 100%;
+	  width: 100%;
+	  z-index: 52;
+	  text-align: center;
+	  margin-top: 70px;
+	  font-size: 30px;
+  }
