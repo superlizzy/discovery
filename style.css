@@ -159,117 +159,129 @@ h1, h2, h3, p {
 		line-height: 1.5em;
 		}
 
-div.sticky {
+.sticky {
 		position: -webkit-sticky; /* Safari */
 		position: sticky;
 		top: 0;
 		background: #fff;
-		height: 200px;
-		width: 700px;
+		height: 100%;
+		width: 100%;
 		padding: 0;
 		margin: auto;
 		text-align: center;
 		z-index: 100;
 	  }
 
-div.sticky img {
+.sticky img {
 	width: 100%;
 }
 
-/*RESULTS*/
-
-.hexagon {
-		background: #CD5C5C; /* Each section's background will need to be replaced by an image (possibly in a new div). Waiting on Tyler Hatland. */
-		position: relative;
-		width: 500px;
-		height: 288.68px;
-		margin: 144px auto 244px auto;
-		transform: rotate(90deg);
-		z-index: 50;
-	  }
-
-.hexagon::before,
-.hexagon::after {
-  content: "";
-  position: absolute;
-  border-left: 250px solid transparent;
-  border-right: 250px solid transparent;
-}
-
-.hexagon::before {
-		bottom: 100%;
-		border-bottom: 144.34px solid #CD5C5C;
-	  }
-
-.hexagon::after {
-		top: 100%;
-		border-top: 144.34px solid #CD5C5C;
-	  }
-
 .grid-container {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		display: grid;
-		grid-template-columns: auto auto auto;
-		transform: rotate(270deg);
-		padding: 0px;
-		z-index: 51;
-	  }
+	display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: -20%;
+  }
 
 .grid-item {
-		padding: 0px;
-		width: 166.67px;
-		height: 166.67px;
-		font-size: 16px;
-	  }
+    padding: 0px;
+    font-size: .8em;
+  }
 
 .grid-item p {
-		  padding: 0px;
-		  margin-top: auto auto;
-	  }
+	  padding: 0px;
+	  margin-top: auto auto;
+  }
 
 .Q6 {
-		  text-align: center;
-		  margin-top: 0px;
-		  transform: rotate(300deg);
-	  }
+	  text-align: center;
+      margin-top: -20%;
+      margin-left: -50%;
+      transform: rotate(300deg);
+
+  }
 
 .Q1 {
-			text-align: center;
-			margin-top: -100px;
-	}
+		text-align: center;
+        margin-top: -90%;
+
+}
 
 .Q2 {
-		text-align: center;
-		margin-top: 0px;
-		transform: rotate(60deg);
-	}
+	text-align: center;
+    margin-top: -20%;
+    margin-right: -50%;
+    transform: rotate(60deg);
+}
 
 .Q3 {
-		text-align: center;
-		margin-top: 60px;
-		transform: rotate(300deg);
-	}
+    position: absolute;
+	text-align: center;
+    margin-top: 9%;
+    margin-left: 2%;
+    transform: rotate(300deg);
+}
 
 .Q5 {
-		text-align: center;
-		margin-top: 60px;
-		transform: rotate(60deg);
-  }
+    position: absolute;
+	text-align: center;
+    margin-top: 8%;
+    margin-left: -3%;
+    transform: rotate(60deg);
+}
 
 .Q4 {
-	text-align: center;
-	margin-top: 150px;
+position: absolute;
+text-align: center;
+margin-top: 17%;
 
-  }
+
+}
 
 .Avg {
-	  position: absolute;
-	  height: 100%;
-	  width: 100%;
-	  z-index: 52;
-	  text-align: center;
-	  margin-top: 70px;
-	  font-size: 30px;
+  position: fixed;
+  top: 51%;
+  left: 41%;
+  font-size: .8em;
+  display: flex;
+  z-index: 3;
+}
+
+/* .aspect-ratio-box {
+    height: 0;
+    overflow: hidden;
+    padding-top: 591.44px / 1127.34px * 100%;
+    background: white;
+    position: relative;
+  } */
+
+  .aspect-ratio-box-inside-CA {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/CriticalAssets.png') no-repeat center center ;
+    background-size: contain;
   }
+
+  .aspect-ratio-box-inside-SC {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/RiskMgmtCompliance.png') no-repeat center center ;
+    background-size: contain;
+  }
+
+  .flexbox-centering {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .viewport-sizing {
+    font-size: 5vw;
+  }
+
