@@ -11,6 +11,11 @@ body {
 		line-height: 1.4em;
 		margin: 0px;}
 
+.results-page {
+	background-color: white;
+	background-image: none;
+}
+
 .wrapper {
 		width: 50%;
 		background-color: hsla(0, 0%, 100%, 0.9);
@@ -143,7 +148,7 @@ h2 {
 
 h3 {
 		margin: 0px 0px 10px 0px;
-		color: #ff0000;
+		color: #2eb800;
 	}
 
 footer {
@@ -176,6 +181,8 @@ h1, h2, h3, p {
 	width: 100%;
 }
 
+
+
 .grid-container {
 	display: grid;
     grid-template-columns: auto auto auto;
@@ -184,7 +191,7 @@ h1, h2, h3, p {
 
 .grid-item {
     padding: 0px;
-    font-size: .8em;
+    font-size: .5em;
   }
 
 .grid-item p {
@@ -202,7 +209,7 @@ h1, h2, h3, p {
 
 .Q1 {
 		text-align: center;
-        margin-top: -90%;
+        margin-top: -100%;
 
 }
 
@@ -216,7 +223,7 @@ h1, h2, h3, p {
 .Q3 {
     position: absolute;
 	text-align: center;
-    margin-top: 9%;
+    margin-top: 4%;
     margin-left: 2%;
     transform: rotate(300deg);
 }
@@ -224,23 +231,23 @@ h1, h2, h3, p {
 .Q5 {
     position: absolute;
 	text-align: center;
-    margin-top: 8%;
-    margin-left: -3%;
+    margin-top: 4%;
+    margin-left: -2%;
     transform: rotate(60deg);
 }
 
 .Q4 {
 position: absolute;
 text-align: center;
-margin-top: 17%;
+margin-top: 10%;
 
 
 }
 
 .Avg {
-  position: fixed;
-  top: 51%;
-  left: 41%;
+  position: absolute;
+  top: 45%;
+  left: 42%;
   font-size: .8em;
   display: flex;
   z-index: 3;
@@ -256,21 +263,66 @@ margin-top: 17%;
 
   .aspect-ratio-box-inside-CA {
     position: absolute;
-    top: 0;
+    top: 200px;
+    left: 0;
+    width: 100%;
+	height: 100%;
+    background: url('images/CA_Results.png') no-repeat center center ;
+    background-size: contain;
+  }
+
+  .aspect-ratio-box-inside-RC {
+	position: absolute;
+	margin-top: 200px;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/CriticalAssets.png') no-repeat center center ;
+    background: url('images/RC_Results.png') no-repeat center center ;
+    background-size: contain;
+  }
+
+  .aspect-ratio-box-inside-SS {
+    position: absolute;
+	top: 200%;
+	margin-top: 200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/SS_Results.png') no-repeat center center ;
+    background-size: contain;
+  }
+
+  .aspect-ratio-box-inside-HB {
+    position: absolute;
+	top: 300%;
+	margin-top: 200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/HB_Results.png') no-repeat center center ;
+    background-size: contain;
+  }
+
+  .aspect-ratio-box-inside-PE {
+    position: absolute;
+	top: 400%;
+	margin-top: 200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/PE_Results.png') no-repeat center center ;
     background-size: contain;
   }
 
   .aspect-ratio-box-inside-SC {
     position: absolute;
-    top: 0;
+	top: 500%;
+	margin-top: 200px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/RiskMgmtCompliance.png') no-repeat center center ;
+    background: url('images/SC_Results.png') no-repeat center center ;
     background-size: contain;
   }
 
@@ -285,3 +337,21 @@ margin-top: 17%;
     font-size: 5vw;
   }
 
+
+  .results-scale {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 100%;
+	left: auto;
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: auto;
+	text-align: center;
+	z-index: 100;
+  }
+
+.results-scale img {
+width: 50%;
+}
