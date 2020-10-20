@@ -172,6 +172,12 @@ div.sticky {
 		z-index: 100;
 	  }
 
+div.sticky img {
+	width: 100%;
+}
+
+/*RESULTS*/
+
 .hexagon {
 		background: #CD5C5C; /* Each section's background will need to be replaced by an image (possibly in a new div). Waiting on Tyler Hatland. */
 		position: relative;
