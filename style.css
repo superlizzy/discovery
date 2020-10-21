@@ -10,10 +10,6 @@ body {
     margin: 0px;
 }
 
-.results-page {
-    background-color: white;
-    background-image: none;
-}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
